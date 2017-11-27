@@ -15,7 +15,7 @@ CO2_SERIAL = '/dev/tty.usbserial'
 CO2_PREHEAT_TIME = 300 # seconds
 CO2_PREHAT_VALUES = [410, 1215]
 CO2_MAX_PPM = 5000 # anything higher is absurd
-LOOP_SLEEP_TIME = 1
+LOOP_SLEEP_TIME = 5
 
 class sensor_server(object):
     def __init__(self, listen_port, serial_port, sleep=LOOP_SLEEP_TIME):
