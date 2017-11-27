@@ -1,0 +1,3 @@
+# Until https://github.com/open-homeautomation/pmsensor/pull/8 is accepted
+git+https://github.com/joegross/pmsensor
+prometheus_client
