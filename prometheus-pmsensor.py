@@ -55,7 +55,9 @@ def init_logging(level=logging.INFO):
     logging.basicConfig(level=level, format='%(asctime)s %(name)-18s %(levelname)-8s %(message)s')
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
     parser.add_argument('-v', '--verbose', action='store_true')
     parser.add_argument('-s', '--serial_port', default=CO2_SERIAL, help='serial port path')
     parser.add_argument('-p', '--listen_port', default=LISTEN_PORT, help='listen port')
