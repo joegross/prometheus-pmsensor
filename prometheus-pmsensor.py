@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 LISTEN_PORT = 8001
 CO2_SERIAL = '/dev/tty.usbserial'
 CO2_PREHEAT_TIME = 300 # seconds
-CO2_PREHAT_VALUES = [410, 1215]
+CO2_PREHAT_VALUES = [400, 410, 1215]
 CO2_MAX_PPM = 5000 # anything higher is absurd
 LOOP_SLEEP_TIME = 5
 
