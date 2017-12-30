@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 User=root
 WorkingDirectory=/home/pi/prometheus-pmsensor
-ExecStart=/home/pi/prometheus-pmsensor/prometheus-pmsensor.py -s /dev/serial0
+ExecStart=/home/pi/prometheus-pmsensor/prometheus-pmsensor.py -s /dev/ttyUSB0
 Restart=always
 
 [Install]
