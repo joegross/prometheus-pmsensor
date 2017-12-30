@@ -1,0 +1,13 @@
+[Unit]
+Description=prometheus-pms
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/prometheus-pmsensor
+ExecStart=/home/pi/prometheus-pmsensor/prometheus-pms.py -s /dev/serial0
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
