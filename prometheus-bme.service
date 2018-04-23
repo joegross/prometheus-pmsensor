@@ -1,0 +1,13 @@
+[Unit]
+Description=prometheus-bme
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/prometheus-pmsensor
+ExecStart=/home/pi/prometheus-pmsensor/prometheus-bme.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
